@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>같은 장면 다른 소리</title>
+<style>
+  :root { --bg:#1b1c20; --card:#25262b; --fg:#f5f5f2; --mute:rgba(245,245,242,.72); --line:rgba(245,245,242,.16); --point:#ff7a5c; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--fg); font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif; line-height:1.7; }
+  main { max-width:680px; margin:0 auto; padding:72px 20px 48px; }
+  .tag { color:var(--point); font-size:14px; font-weight:700; letter-spacing:.06em; }
+  h1 { font-size:clamp(30px,6.5vw,42px); font-weight:800; line-height:1.3; margin:12px 0 40px; word-break:keep-all; }
+  ol.summary { list-style:none; padding:0; display:grid; gap:14px; margin-bottom:56px; }
+  ol.summary li { font-size:18px; padding-left:32px; position:relative; word-break:keep-all; }
+  ol.summary li b { position:absolute; left:0; color:var(--point); font-weight:700; }
+  figure { background:var(--card); border-radius:14px; padding:24px; margin-bottom:12px; }
+  .abc { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .abc div { border-top:2px solid var(--line); padding-top:14px; font-size:15px; }
+  .abc div:nth-child(2) { border-color:var(--point); }
+  .abc b { display:block; font-size:17px; margin-bottom:8px; }
+  .abc div:nth-child(2) b { color:var(--point); }
+  .abc p { margin-bottom:2px; word-break:keep-all; }
+  .abc em { display:block; font-style:normal; color:var(--mute); margin-top:10px; word-break:keep-all; }
+  @media (max-width:520px) { .abc { grid-template-columns:1fr; } }
+  figcaption { font-size:14px; color:var(--mute); margin:0 0 56px; }
+  h2 { font-size:14px; color:var(--point); font-weight:700; letter-spacing:.06em; margin-bottom:16px; }
+  ul.claims { list-style:none; padding:0; display:grid; gap:12px; margin-bottom:64px; }
+  ul.claims li { font-size:20px; font-weight:700; line-height:1.5; padding:4px 0 4px 16px; border-left:3px solid var(--point); word-break:keep-all; }
+  footer { font-size:14px; color:var(--mute); border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="tag">같은 장면 다른 소리</p>
+  <h1>소리만 바꿔도 같은 장면이 다르게 읽힌다</h1>
+
+  <ol class="summary">
+    <li><b>1</b>초보자는 작곡에서 막혀 영상 음악 기획을 시작도 못 한다</li>
+    <li><b>2</b>기존 영상 하나에 BGM과 SFX만 새로 기획해 입힌다</li>
+    <li><b>3</b>원본과 적용본을 나란히 놓고 소리를 고른 이유까지 말로 설명한다</li>
+  </ol>
+
+  <figure class="abc">
+    <div><b>A 경쾌하게</b><p>BGM 밝고 통통 튀는 음악</p><p>SFX 발소리와 문 소리 과장</p><em>코믹하고 가벼운 예능</em></div>
+    <div><b>B 긴장되게</b><p>BGM 낮게 깔리는 소리</p><p>SFX 정적 뒤 문이 삐걱</p><em>무언가 일어날 것 같은 긴장</em></div>
+    <div><b>C 따뜻하게</b><p>BGM 잔잔한 피아노</p><p>SFX 최소한으로</p><em>설렘이나 그리움</em></div>
+  </figure>
+  <figcaption>같은 5초 (조용한 복도를 걸어가 문을 여는 가상 장면) / 결과가 아닌 예상</figcaption>
+
+  <h2>주장 세 개</h2>
+  <ul class="claims">
+    <li>같은 5초가 소리만 바꾸면 세 가지 분위기가 된다</li>
+    <li>작곡 없이 기존 영상 하나로 다섯 단계면 된다</li>
+    <li>BGM과 SFX를 따로 갈아 끼울 수 있다</li>
+  </ul>
+
+  <footer>순천 유자영 / 2026-11-11 / 43일차 판</footer>
+</main>
+</body>
+</html>
